@@ -1,7 +1,7 @@
 function calculadora () {
-        const operacao = Number.isInteger(prompt('Escolha uma operação:\n 1 = soma (+)\n 2 = subtração (-)\n 3 = multiplicação (*)\n 4 = divisãoReal (/)\n 5 = divisãoInteira (%)\n 6 = potenciação (**)'));
+        const operacao = Number(prompt('Escolha uma operação:\n 1 = soma (+)\n 2 = subtração (-)\n 3 = multiplicação (*)\n 4 = divisãoReal (/)\n 5 = divisãoInteira (%)\n 6 = potenciação (**)'));
     
-    if (!operacao || operacao >= 7) {
+    if (operacao >= 7) {
         alert('Erro - operação inválida');
         calculadora();
 
